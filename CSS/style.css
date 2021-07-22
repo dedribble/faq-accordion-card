@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+:root{
+    --dDblue:hsl(238, 29%, 16%);
+    --sRed:hsl(14, 88%, 65%);
+    /* Gradient Colors */
+    --sViolet:hsl(273, 75%, 66%);
+    --sBlue:hsl(240, 73%, 65%);
+    /* Text color */
+    --VeryDarkGrayishBlue:hsl(237, 12%, 33%);
+    --darkGrayishBlue:hsl(240, 6%, 50%);
+    /* Dividers Color */
+    --lightGrayishBlue:hsl(240, 5%, 91%);
+}
+body{
+    width:100vw;
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    padding:450px 30px;
+    background-image:linear-gradient(to bottom,var(--sViolet),var(--sBlue));
+    background-repeat:no-repeat;
+    position: relative;
+}
+.container{
+    width: 100%;
+    border-radius:22px;
+    position: relative;
+    background-color:#fff;
+}
+.container > .illustration{
+    display:grid;
+    place-items:center;
+    height: 100px;
+    /* border: 1px solid red; */
+}
+.container > .illustration > .illustrator{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    top:-108px;
+    left: -12px;
+    /* border: 1px solid red; */
+}
+.container > .illustration > .pattern{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:0px;
+    left:55px;   
+}
+.container > main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 20px 30px 20px;
+}
+.container > main > h1{
+    margin-bottom: 30px;
+    color:var(--dDblue);
+}
+.container > main > section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.container > main > section > .faq{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px 10px;
+}
+.container > main > section > .faq > .item{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.container > main > section > .faq > .item > .head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container > main > section > .faq > .item > .head > h6 { 
+    font-size: 0.9em;
+    font-weight: normal;
+    color:var(--dDblue);
+}
+.container > main > section > .faq > .item > .head > .arrow{
+    display: grid;
+    place-items: center;
+}
+.container > main > section > .faq > .item > .body{
+    width: 280px;
+    display: none;
+    margin-top: 8px;
+    font-size: 0.8em;
+    line-height: 1.4em;
+    color:var(--VeryDarkGrayishBlue);
+}
+.container > main > section > .faq > .item > .body.active{
+    display: block;
+}
+.container > main > section > .faq > hr{
+    outline: none;
+    border: 0;
+    margin-top: 12px;
+    background-color: var(--lightGrayishBlue);
+    height: 1px;
+}
