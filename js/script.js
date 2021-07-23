@@ -11,7 +11,6 @@ const body4 = document.getElementById('body4')
 const body5 = document.getElementById('body5')
 
 arOne.addEventListener('click', ()=> {
-
     body1.classList.toggle('active')
 })
 
@@ -29,6 +28,5 @@ arFour.addEventListener('click', ()=> {
 })
 
 arFive.addEventListener('click', ()=> {
-    arTwo.style.transform = "rotate(180deg)"
     body5.classList.toggle('active')
 })
